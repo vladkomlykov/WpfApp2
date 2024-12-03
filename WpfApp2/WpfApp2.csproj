@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\alstroemeria.png" />
+    <None Remove="img\background.jpg" />
+    <None Remove="img\password.png" />
+    <None Remove="img\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\alstroemeria.png" />
+    <Resource Include="img\background.jpg" />
+    <Resource Include="img\password.png" />
+    <Resource Include="img\user.png" />
+  </ItemGroup>
+
+</Project>
